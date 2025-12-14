@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <title>Enigma's Edge</title>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@EnigmasEdgeGame" />
+    <meta
+      name="twitter:title"
+      content="Keystone: Supernova - A Roguelike RPG of Exploration and Strategy"
+    />
+    <meta
+      name="twitter:description"
+      content="Lead a party of adventurers in Keystone: Supernova, a science-fantasy RPG blending dungeon crawling, tactical combat, and intricate environmental puzzles. Will you face the edge?"
+    />
+    <meta
+      name="twitter:image"
+      content="http://www.enigmasedge.com/images/og-image.jpg"
+    />
+
+    <!-- Open Graph data -->
+    <meta
+      property="og:title"
+      content="Keystone: Supernova - A Roguelike RPG of Exploration and Strategy"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.enigmasedge.com/" />
+    <meta
+      property="og:image"
+      content="http://www.enigmasedge.com/images/og-image.jpg"
+    />
+    <meta
+      property="og:image:url"
+      content="http://www.enigmasedge.com/images/og-image.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Lead a party of adventurers in Keystone: Supernova, a science-fantasy RPG blending dungeon crawling, tactical combat, and intricate environmental puzzles. Will you face the edge?"
+    />
+    <meta property="og:site_name" content="Keystone: Supernova" />
+
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap.min.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/parallax.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/lite-yt-embed.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      .cinzel-decorative-regular {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .cinzel-decorative-bold {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .cinzel-decorative-black {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="background" id="static-background"></div>
+      <div class="background" id="parallax-background">
+        <div
+          class="layer parallax-effect"
+          id="layer-0"
+          data-speed="2"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 1 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-1"
+          data-speed="5"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 2 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-2"
+          data-speed="11"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 3 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-3"
+          data-speed="16"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 4 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-4"
+          data-speed="26"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 5 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-5"
+          data-speed="36"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 6 -->
+        <div
+          class="layer parallax-effect"
+          id="layer-6"
+          data-speed="49"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 7 -->
+        <div class="layer" id="layer-overlay"></div>
+        <div
+          class="layer parallax-effect"
+          id="layer-7"
+          data-speed="69"
+          style="transform: translate3d(0px, 0px, 0px)"
+        ></div>
+        <!-- Layer 8 -->
+        <div class="layer" id="layer-8" data-speed="100"></div>
+        <!-- Layer 9 -->
+      </div>
+
+      <div id="main-container" class="container-fluid">
+        <div id="main">
+          <br />
+          <br />
+          <div class="section slope">
+            <div class="sloped-bg home-2"></div>
+            <div class="container" style="opacity: 1">
+              <div class="content-wrap narrow">
+                <div class="section-title cinzel-decorative-regular">
+                  Are You Ready to Face the Edge?
+                </div>
+                <p class="paragraph">
+                  Embark on an unforgettable journey in Keystone: Supernova, a 3D
+                  roguelike science-fantasy RPG that reimagines classic dungeon
+                  crawling. Awakened after a century in cryostasis, you find
+                  yourself trapped within the remnants of a crashed spaceship,
+                  now a sprawling labyrinth beneath the medieval planet of
+                  Delavorn.
+                </p>
+
+                <p class="paragraph">
+                  Lead a party of three unique adventurers—each with vital
+                  skills—through a dark and mysterious maze where advanced
+                  technology and ancient magic intertwine. Confront formidable
+                  foes in strategic turn-based combat, solve intricate
+                  environmental puzzles that reshape your path, and uncover a
+                  narrative woven into every corner of this atmospheric world.
+                  Every decision matters, every shadow holds a secret—will you
+                  face the Edge?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <section id="features-section">
+            <div class="container-fluid">
+              <div class="row features text-center">
+                <div class="col-md-4 feature-card">
+                  <h2 class="short-hr-center cinzel-decorative-regular">
+                    Adventure
+                  </h2>
+                  <p>
+                    Lead your three adventurers, each with their own distinct
+                    skills and abilities, through the harsh and unforgiving
+                    world of Delavorn. Whether solving puzzles or engaging in
+                    combat, you'll need to use their abilities in harmony to
+                    survive.
+                  </p>
+                </div>
+                <div class="col-md-4 feature-card">
+                  <h2 class="short-hr-center cinzel-decorative-regular">
+                    Puzzles
+                  </h2>
+                  <p>
+                    In Enigma's Edge, the world itself is a puzzle. Rotate
+                    dungeons, unlock ancient mechanisms, and use the environment
+                    to your advantage as you navigate through intricate
+                    labyrinths filled with hidden secrets.
+                  </p>
+                </div>
+                <div class="col-md-4 feature-card">
+                  <h2 class="short-hr-center cinzel-decorative-regular">
+                    Combat
+                  </h2>
+                  <p>
+                    Engage in tactical, turn-based combat where strategy and
+                    preparation are key. Face a variety of enemies, each with
+                    unique abilities and weaknesses. Your choices in battle will
+                    determine your survival.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row extra-features">
+                <div class="col-xl-12 col-md-12" style="margin: 100px 0">
+                  <h2
+                    class="cinzel-decorative-regular"
+                    style="line-height: 3rem; text-align: center"
+                  >
+                    Keystone: Supernova - Official Reveal Trailer
+                  </h2>
+                  <p
+                    style="
+                      align-content: center;
+                      text-align: center;
+                      margin: 0 auto 30px;
+                    "
+                  >
+                    Get your first glimpse of the mysteries and challenges that
+                    await in Keystone: Supernova. This official reveal trailer dives
+                    into the heart of the game, showcasing the epic world,
+                    strategic combat, and mind-bending puzzles that will push
+                    you to the limit. Prepare to lead your team through
+                    uncharted lands and face the unknown—this is just the
+                    beginning of the journey.
+                  </p>
+                  <lite-youtube
+                    videoid="EHjV2kEcoP0"
+                    playlabel="Play: Keystone: Supernova - Official Reveal Trailer"
+                    style="
+                      background-image: url('https://i.ytimg.com/vi/EHjV2kEcoP0/maxresdefault.jpg');
+                      border: 2px solid #ddd;
+                      border-radius: 20px;
+                    "
+                  ></lite-youtube>
+                  <script src="js/lite-yt-embed.js"></script>
+                </div>
+              </div>
+              <div class="row extra-features">
+                <div class="container" style="margin: 200px 0">
+                  <div class="row tiny-margin cta-card">
+                    <div class="col-md-6">
+                      <img
+                        src="images/game.png"
+                        class="img-fluid game-box animation-element slide-in-left"
+                      />
+                    </div>
+                    <div class="col-md-5">
+                        <h2 class="cinzel-decorative-regular">
+                          Step Into the Unknown
+                        </h2>
+                        <p>
+                          <b>Keystone: Supernova</b> is a role-playing game set inside a vast, engineered dungeon that responds to player perception and configuration. Players control a small party of characters, each revealing different structural aspects of the environment, uncovering hidden paths, altered geometry, and overlapping layers of reality. Exploration, puzzle-solving, and tactical encounters are all part of the same interconnected system.
+                        </p>
+                        <p>
+                          The game centers on interacting with the dungeon’s internal mechanisms to change how the world behaves. By configuring key structures, players influence navigation, access, and outcomes as they move through the environment. This release represents an early playable version of Keystone, available to download and run locally.
+                        </p>
+                        <p>
+                                                <a
+                          href="https://store.epicgames.com/p/enigmas-edge-fea563"
+                          target="_blank"
+                          class="platform-button is-icon w-inline-block"
+                        >
+                          <!-- <img
+                            class="icon-1x1-small"
+                            src="images/icon_epic.svg"
+                          /> -->
+                          Download <b>Keystone: Supernova</b>
+                        </a>
+                        </p>
+                    </div>
+                  </div>
+                  <!-- <div class="margin-top margin-medium z-index-2">
+                    <div class="button-group is-center">
+                      <a
+                        href="https://store.steampowered.com/app/3202440/Enigmas_Edge/"
+                        target="_blank"
+                        class="platform-button is-icon w-inline-block"
+                      >
+                        <svg
+                          class="icon-1x1-small"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 30 30"
+                          width="480"
+                          height="480"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M15 3C8.373 3 3 8.373 3 15C3 15.285 3.0229687 15.56375 3.0429688 15.84375L7.5351562 17.017578C8.1301563 15.988578 9.1675781 15.247547 10.392578 15.060547L11.066406 13.851562C11.027406 13.572563 11 13.29 11 13C11 9.686 13.686 7 17 7C20.314 7 23 9.686 23 13C23 16.314 20.314 19 17 19C16.71 19 16.427437 18.972594 16.148438 18.933594L14.939453 19.607422C14.645453 21.526422 13.001 23 11 23C8.791 23 7 21.209 7 19C7 18.982 7.0058594 18.965266 7.0058594 18.947266L3.3945312 18.005859C4.7295312 23.175859 9.412 27 15 27C21.627 27 27 21.627 27 15C27 8.373 21.627 3 15 3 z M 17 9C14.794 9 13 10.794 13 13C13 15.206 14.794 17 17 17C19.206 17 21 15.206 21 13C21 10.794 19.206 9 17 9 z M 17 11C18.103 11 19 11.897 19 13C19 14.103 18.103 15 17 15C15.897 15 15 14.103 15 13C15 11.897 15.897 11 17 11 z M 11 16.5C10.215 16.5 9.5224531 16.868547 9.0644531 17.435547L11.263672 18.035156C11.796672 18.181156 12.111797 18.730672 11.966797 19.263672C11.843797 19.707672 11.44 20 11 20C10.913 20 10.825328 19.988844 10.736328 19.964844L8.5351562 19.365234C8.7141562 20.571234 9.744 21.5 11 21.5C12.381 21.5 13.5 20.381 13.5 19C13.5 17.619 12.381 16.5 11 16.5 z"
+                          />
+                        </svg>
+                        Steam
+                      </a>
+                      <a
+                        href="https://store.epicgames.com/p/enigmas-edge-fea563"
+                        target="_blank"
+                        class="platform-button is-icon w-inline-block"
+                      >
+                        <img
+                          class="icon-1x1-small"
+                          src="images/icon_epic.svg"
+                        />
+                        Epic
+                      </a>
+                      <a
+                        class="platform-button is-icon w-inline-block disabled"
+                      >
+                        <svg
+                          class="icon-1x1-small"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 30 30"
+                          width="480"
+                          height="480"
+                          fill="#555"
+                        >
+                          <path
+                            d="M15 3C13.051 3 10.635984 3.6181719 8.8339844 4.7011719C8.7039844 4.7771719 8.3470625 5.0221406 8.1640625 5.2441406L8.1640625 5.2460938C9.8830625 3.3500938 14.893 7.3485937 15 7.4335938L15 7.4355469C15.107 7.3505469 20.116938 3.3520937 21.835938 5.2460938C21.651937 5.0240937 21.295063 4.780125 21.164062 4.703125C19.363063 3.622125 17.254953 3 15.001953 3L15 3 z M 7.4414062 6.1035156C7.0363594 6.1687656 6.5830625 6.4272031 6.1953125 6.8457031C4.2123125 8.9867031 3 11.850047 3 14.998047C3 18.106507 4.1826933 20.935533 6.1210938 23.066406C5.4850937 19.988406 6.0637812 17.819047 7.8007812 14.998047C9.5407813 12.174047 12.599609 8.9980469 12.599609 8.9980469C10.075609 6.6150469 8.2821719 6.1885156 7.8261719 6.1035156C7.7061719 6.0810156 7.5764219 6.0817656 7.4414062 6.1035156 z M 6.1210938 23.066406C6.1210938 23.066406 6.1210938 23.068359 6.1210938 23.068359L6.1210938 23.070312C8.3160938 25.482313 11.494953 27 15.001953 27C18.518953 27 21.684859 25.485219 23.880859 23.074219L23.880859 23.072266C25.818859 20.940266 27 18.109 27 15C27 11.852 25.788687 8.9896563 23.804688 6.8476562C23.287688 6.2896563 22.653828 6.0154687 22.173828 6.1054688C21.718828 6.1914688 19.924391 6.618 17.400391 9C17.400391 9 20.459219 12.176 22.199219 15C23.935219 17.822 24.514906 19.990359 23.878906 23.068359C23.872906 23.033359 23.629672 21.45375 22.013672 19.21875C20.750672 17.47575 17 13.300391 15 11.400391C13 13.300391 9.2493281 17.471797 7.9863281 19.216797C6.3703281 21.449797 6.1270937 23.030406 6.1210938 23.066406 z"
+                          />
+                        </svg>
+                        Xbox
+                      </a>
+                      <a
+                        class="platform-button is-icon w-inline-block disabled"
+                      >
+                        <svg
+                          class="icon-1x1-small"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 30 30"
+                          width="480"
+                          height="480"
+                          fill="#555"
+                        >
+                          <path
+                            d="M11.181641 3.7421875L11.181641 24.857422L15.761719 26.257812L15.761719 8.5761719C15.761719 8.0671719 15.761625 7.8135937 16.015625 7.5585938C16.142625 7.3045937 16.396391 7.3046406 16.650391 7.4316406C17.286391 7.6856406 17.669922 8.1948906 17.669922 9.2128906L17.669922 16.207031C19.195922 16.970031 20.466375 16.970031 21.484375 16.207031C22.502375 15.444031 23.011719 14.300578 23.011719 12.392578C23.012719 10.357578 22.630234 9.0853594 21.740234 8.0683594C20.977234 7.0503594 19.578969 6.1594375 17.542969 5.5234375C14.998969 4.7604375 12.835641 4.1241875 11.181641 3.7421875 z M 9.9101562 16.972656L4.0585938 19.007812L3.1699219 19.388672C1.7709219 20.024672 1.0078125 20.660875 1.0078125 21.296875C1.1348125 22.059875 1.388875 23.078844 3.296875 23.714844C5.077875 24.350844 6.4770625 24.604891 10.039062 23.587891L10.039062 21.296875C6.6030625 22.440875 6.0949375 22.314547 5.5859375 22.060547C5.0769375 21.806547 5.076125 21.550828 5.203125 21.423828C5.585125 21.169828 6.984375 20.660156 6.984375 20.660156L9.9101562 19.642578L9.9101562 16.972656 z M 22.853516 17.962891C22.440109 17.948984 22.026781 17.956531 21.613281 17.988281C20.214281 17.988281 18.941063 18.243 17.414062 18.625L17.414062 21.296875L20.212891 20.277344L21.738281 19.769531C21.738281 19.769531 22.375812 19.642625 22.757812 19.515625C23.393812 19.388625 24.15625 19.642578 24.15625 19.642578C24.53825 19.642578 24.792969 19.768438 24.792969 20.023438C24.919969 20.277438 24.665297 20.406156 24.029297 20.660156L22.630859 21.169922L17.542969 23.076172L17.542969 25.748047L19.832031 24.984375L26.191406 22.695312L26.955078 22.3125C28.481078 21.8035 29.117234 21.167297 28.990234 20.404297C28.990234 19.642297 28.100219 19.134 26.574219 18.625C25.333719 18.24325 24.093734 18.004609 22.853516 17.962891 z"
+                          />
+                        </svg>
+                        PlayStation
+                      </a>
+                      <a
+                        class="platform-button is-icon w-inline-block disabled"
+                      >
+                        <svg
+                          class="icon-1x1-small"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 30 30"
+                          width="480"
+                          height="480"
+                          fill="#555"
+                        >
+                          <path
+                            d="M19.496 4L16 4.008V26h3.496C22.531 26 25 23.415 25 20.238v-9.887C25 6.374 22.943 4 19.496 4zM20.5 20c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5S21.879 20 20.5 20zM10.504 26L14 25.992V4h-3.496C7.469 4 5 6.585 5 9.762v9.887C5 23.626 7.057 26 10.504 26zM9.5 9c1.379 0 2.5 1.121 2.5 2.5S10.879 14 9.5 14 7 12.879 7 11.5 8.121 9 9.5 9z"
+                          />
+                        </svg>
+                        Nintendo Switch
+                      </a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="extras" class="full-width">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 logo-container">
+                  <img
+                    src="images/headline.png"
+                    class="img-fluid headline"
+                    alt="source code"
+                  />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2
+                        class="cinzel-decorative-regular"
+                        style="line-height: 3rem"
+                      >
+                        Follow the adventure
+                      </h2>
+                      <p>
+                        Stay updated on the latest news, releases, and exclusive
+                        content for Enigma’s Edge™. Sign up for our newsletter
+                        and be the first to hear about new chapters, development
+                        updates, and more. Follow us on social media for
+                        behind-the-scenes insights!
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div id="newsletter-box" class="row tiny-margin">
+                    <div class="col-md-12">
+                      <h3 class="cinzel">NEWSLETTER</h3>
+                      <form id="newsletter" data-toggle="validator">
+                        <input
+                          type="email"
+                          id="emailsign"
+                          placeholder="Your Email Address"
+                          style="margin: 20px"
+                        />
+                        <button type="submit" id="form-signup" class="button">
+                          SUBSCRIBE
+                        </button>
+                        <div id="msgSignup" class="h3 text-center hidden"></div>
+                      </form>
+                    </div>
+                  </div> -->
+                  <div class="row social">
+                    <div class="col-md-12">
+                      <ul class="social-links">
+                        <li>
+                          <a
+                            href="https://www.facebook.com/enigmasedge/"
+                            target="_blank"
+                          >
+                            <i class="fab fa-facebook-f fa-lg icon-social"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://x.com/EnigmasEdgeGame"
+                            target="_blank"
+                          >
+                            <i class="fab fa-twitter fa-lg icon-social"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/enigmasedgegame/"
+                            target="_blank"
+                          >
+                            <i class="fab fa-instagram fa-lg icon-social"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/@EnigmasEdge"
+                            target="_blank"
+                          >
+                            <i class="fab fa-youtube fa-lg icon-social"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="footer-credit-text"
+          style="text-align: center; background-color: #000"
+        >
+          © Squarecrow Games, LLC. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/parallax.js"></script>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="./js/blazy.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="./js/arsnl.js"></script>
+  </body>
+</html>
